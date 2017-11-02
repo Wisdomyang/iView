@@ -1,16 +1,16 @@
-const index = resolve =>{
-	require.ensure(['../pages/index/index'], () => {
-    resolve(require('../pages/index/index'))
+const wechatcouponlist = resolve =>{
+	require.ensure(['../pages/coupon/wechatcoupon/wechatcouponlist'], () => {
+    resolve(require('../pages/coupon/wechatcoupon/wechatcouponlist'))
   })  
 }
 
 export const routes=[
 	{
 	    path: '/', 
-	    name: 'index',
-	    component: index,
+	    name: 'wechatcouponlist',
+	    component: wechatcouponlist,
 	    meta: {
-	      path: 'index'
+	      path: 'wechatcouponlist'
 	    }
 	},
 	{
