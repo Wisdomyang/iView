@@ -8,6 +8,7 @@ import axios from "axios";
 import iView from 'iview';
 // css
 import 'iview/dist/styles/iview';
+import './assets/css/common';
 Vue.config.productionTip = false;
 Vue.prototype.$http = axios;
 Vue.use(VueRouter);
